@@ -5,4 +5,6 @@
 
 ![](https://github.com/wanggang1128/WGCommonFuntions/raw/master/解决scrollView上tableView侧滑/demo01.gif)
 
+<img src="https://github.com/wanggang1128/WGCommonFuntions/raw/master/解决scrollView上tableView侧滑/demo01.gif" width="100" height="200" />
+
 ![](https://github.com/wanggang1128/WGCommonFuntions/raw/master/提高UISlider灵敏度/demo02.gif)
