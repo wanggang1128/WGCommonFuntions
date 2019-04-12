@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32D2C023226089E9004F5EB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D2C022226089E9004F5EB6 /* AppDelegate.m */; };
+		32D2C026226089E9004F5EB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D2C025226089E9004F5EB6 /* ViewController.m */; };
+		32D2C02B226089EA004F5EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D2C02A226089EA004F5EB6 /* Assets.xcassets */; };
+		32D2C02E226089EA004F5EB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D2C02C226089EA004F5EB6 /* LaunchScreen.storyboard */; };
+		32D2C031226089EA004F5EB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D2C030226089EA004F5EB6 /* main.m */; };
+		32D2C03B226089EA004F5EB6 /* WGSliderSensitivityDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D2C03A226089EA004F5EB6 /* WGSliderSensitivityDemoTests.m */; };
+		32D2C046226089EA004F5EB6 /* WGSliderSensitivityDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D2C045226089EA004F5EB6 /* WGSliderSensitivityDemoUITests.m */; };
+		32D2C05522608A3B004F5EB6 /* WGUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D2C05322608A3B004F5EB6 /* WGUISlider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32D2C037226089EA004F5EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32D2C016226089E9004F5EB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D2C01D226089E9004F5EB6;
+			remoteInfo = WGSliderSensitivityDemo;
+		};
+		32D2C042226089EA004F5EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32D2C016226089E9004F5EB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D2C01D226089E9004F5EB6;
+			remoteInfo = WGSliderSensitivityDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32D2C01E226089E9004F5EB6 /* WGSliderSensitivityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGSliderSensitivityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D2C021226089E9004F5EB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32D2C022226089E9004F5EB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32D2C024226089E9004F5EB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32D2C025226089E9004F5EB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		32D2C02A226089EA004F5EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32D2C02D226089EA004F5EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32D2C02F226089EA004F5EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D2C030226089EA004F5EB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32D2C036226089EA004F5EB6 /* WGSliderSensitivityDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGSliderSensitivityDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D2C03A226089EA004F5EB6 /* WGSliderSensitivityDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGSliderSensitivityDemoTests.m; sourceTree = "<group>"; };
+		32D2C03C226089EA004F5EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D2C041226089EA004F5EB6 /* WGSliderSensitivityDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGSliderSensitivityDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D2C045226089EA004F5EB6 /* WGSliderSensitivityDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGSliderSensitivityDemoUITests.m; sourceTree = "<group>"; };
+		32D2C047226089EA004F5EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D2C05322608A3B004F5EB6 /* WGUISlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGUISlider.m; sourceTree = "<group>"; };
+		32D2C05422608A3B004F5EB6 /* WGUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGUISlider.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32D2C01B226089E9004F5EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D2C033226089EA004F5EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D2C03E226089EA004F5EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32D2C015226089E9004F5EB6 = {
+			isa = PBXGroup;
+			children = (
+				32D2C020226089E9004F5EB6 /* WGSliderSensitivityDemo */,
+				32D2C039226089EA004F5EB6 /* WGSliderSensitivityDemoTests */,
+				32D2C044226089EA004F5EB6 /* WGSliderSensitivityDemoUITests */,
+				32D2C01F226089E9004F5EB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32D2C01F226089E9004F5EB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32D2C01E226089E9004F5EB6 /* WGSliderSensitivityDemo.app */,
+				32D2C036226089EA004F5EB6 /* WGSliderSensitivityDemoTests.xctest */,
+				32D2C041226089EA004F5EB6 /* WGSliderSensitivityDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32D2C020226089E9004F5EB6 /* WGSliderSensitivityDemo */ = {
+			isa = PBXGroup;
+			children = (
+				32D2C021226089E9004F5EB6 /* AppDelegate.h */,
+				32D2C022226089E9004F5EB6 /* AppDelegate.m */,
+				32D2C024226089E9004F5EB6 /* ViewController.h */,
+				32D2C025226089E9004F5EB6 /* ViewController.m */,
+				32D2C05422608A3B004F5EB6 /* WGUISlider.h */,
+				32D2C05322608A3B004F5EB6 /* WGUISlider.m */,
+				32D2C02A226089EA004F5EB6 /* Assets.xcassets */,
+				32D2C02C226089EA004F5EB6 /* LaunchScreen.storyboard */,
+				32D2C02F226089EA004F5EB6 /* Info.plist */,
+				32D2C030226089EA004F5EB6 /* main.m */,
+			);
+			path = WGSliderSensitivityDemo;
+			sourceTree = "<group>";
+		};
+		32D2C039226089EA004F5EB6 /* WGSliderSensitivityDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				32D2C03A226089EA004F5EB6 /* WGSliderSensitivityDemoTests.m */,
+				32D2C03C226089EA004F5EB6 /* Info.plist */,
+			);
+			path = WGSliderSensitivityDemoTests;
+			sourceTree = "<group>";
+		};
+		32D2C044226089EA004F5EB6 /* WGSliderSensitivityDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32D2C045226089EA004F5EB6 /* WGSliderSensitivityDemoUITests.m */,
+				32D2C047226089EA004F5EB6 /* Info.plist */,
+			);
+			path = WGSliderSensitivityDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32D2C01D226089E9004F5EB6 /* WGSliderSensitivityDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D2C04A226089EA004F5EB6 /* Build configuration list for PBXNativeTarget "WGSliderSensitivityDemo" */;
+			buildPhases = (
+				32D2C01A226089E9004F5EB6 /* Sources */,
+				32D2C01B226089E9004F5EB6 /* Frameworks */,
+				32D2C01C226089E9004F5EB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WGSliderSensitivityDemo;
+			productName = WGSliderSensitivityDemo;
+			productReference = 32D2C01E226089E9004F5EB6 /* WGSliderSensitivityDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32D2C035226089EA004F5EB6 /* WGSliderSensitivityDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D2C04D226089EA004F5EB6 /* Build configuration list for PBXNativeTarget "WGSliderSensitivityDemoTests" */;
+			buildPhases = (
+				32D2C032226089EA004F5EB6 /* Sources */,
+				32D2C033226089EA004F5EB6 /* Frameworks */,
+				32D2C034226089EA004F5EB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32D2C038226089EA004F5EB6 /* PBXTargetDependency */,
+			);
+			name = WGSliderSensitivityDemoTests;
+			productName = WGSliderSensitivityDemoTests;
+			productReference = 32D2C036226089EA004F5EB6 /* WGSliderSensitivityDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32D2C040226089EA004F5EB6 /* WGSliderSensitivityDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D2C050226089EA004F5EB6 /* Build configuration list for PBXNativeTarget "WGSliderSensitivityDemoUITests" */;
+			buildPhases = (
+				32D2C03D226089EA004F5EB6 /* Sources */,
+				32D2C03E226089EA004F5EB6 /* Frameworks */,
+				32D2C03F226089EA004F5EB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32D2C043226089EA004F5EB6 /* PBXTargetDependency */,
+			);
+			name = WGSliderSensitivityDemoUITests;
+			productName = WGSliderSensitivityDemoUITests;
+			productReference = 32D2C041226089EA004F5EB6 /* WGSliderSensitivityDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32D2C016226089E9004F5EB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = bozhong;
+				TargetAttributes = {
+					32D2C01D226089E9004F5EB6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					32D2C035226089EA004F5EB6 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 32D2C01D226089E9004F5EB6;
+					};
+					32D2C040226089EA004F5EB6 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 32D2C01D226089E9004F5EB6;
+					};
+				};
+			};
+			buildConfigurationList = 32D2C019226089E9004F5EB6 /* Build configuration list for PBXProject "WGSliderSensitivityDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32D2C015226089E9004F5EB6;
+			productRefGroup = 32D2C01F226089E9004F5EB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32D2C01D226089E9004F5EB6 /* WGSliderSensitivityDemo */,
+				32D2C035226089EA004F5EB6 /* WGSliderSensitivityDemoTests */,
+				32D2C040226089EA004F5EB6 /* WGSliderSensitivityDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32D2C01C226089E9004F5EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D2C02E226089EA004F5EB6 /* LaunchScreen.storyboard in Resources */,
+				32D2C02B226089EA004F5EB6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D2C034226089EA004F5EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D2C03F226089EA004F5EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32D2C01A226089E9004F5EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D2C026226089E9004F5EB6 /* ViewController.m in Sources */,
+				32D2C031226089EA004F5EB6 /* main.m in Sources */,
+				32D2C05522608A3B004F5EB6 /* WGUISlider.m in Sources */,
+				32D2C023226089E9004F5EB6 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D2C032226089EA004F5EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D2C03B226089EA004F5EB6 /* WGSliderSensitivityDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D2C03D226089EA004F5EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D2C046226089EA004F5EB6 /* WGSliderSensitivityDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32D2C038226089EA004F5EB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D2C01D226089E9004F5EB6 /* WGSliderSensitivityDemo */;
+			targetProxy = 32D2C037226089EA004F5EB6 /* PBXContainerItemProxy */;
+		};
+		32D2C043226089EA004F5EB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D2C01D226089E9004F5EB6 /* WGSliderSensitivityDemo */;
+			targetProxy = 32D2C042226089EA004F5EB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32D2C02C226089EA004F5EB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32D2C02D226089EA004F5EB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32D2C048226089EA004F5EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32D2C049226089EA004F5EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32D2C04B226089EA004F5EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGSliderSensitivityDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGSliderSensitivityDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32D2C04C226089EA004F5EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGSliderSensitivityDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGSliderSensitivityDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32D2C04E226089EA004F5EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGSliderSensitivityDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGSliderSensitivityDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WGSliderSensitivityDemo.app/WGSliderSensitivityDemo";
+			};
+			name = Debug;
+		};
+		32D2C04F226089EA004F5EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGSliderSensitivityDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGSliderSensitivityDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WGSliderSensitivityDemo.app/WGSliderSensitivityDemo";
+			};
+			name = Release;
+		};
+		32D2C051226089EA004F5EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGSliderSensitivityDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGSliderSensitivityDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WGSliderSensitivityDemo;
+			};
+			name = Debug;
+		};
+		32D2C052226089EA004F5EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGSliderSensitivityDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGSliderSensitivityDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WGSliderSensitivityDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32D2C019226089E9004F5EB6 /* Build configuration list for PBXProject "WGSliderSensitivityDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D2C048226089EA004F5EB6 /* Debug */,
+				32D2C049226089EA004F5EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32D2C04A226089EA004F5EB6 /* Build configuration list for PBXNativeTarget "WGSliderSensitivityDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D2C04B226089EA004F5EB6 /* Debug */,
+				32D2C04C226089EA004F5EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32D2C04D226089EA004F5EB6 /* Build configuration list for PBXNativeTarget "WGSliderSensitivityDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D2C04E226089EA004F5EB6 /* Debug */,
+				32D2C04F226089EA004F5EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32D2C050226089EA004F5EB6 /* Build configuration list for PBXNativeTarget "WGSliderSensitivityDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D2C051226089EA004F5EB6 /* Debug */,
+				32D2C052226089EA004F5EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32D2C016226089E9004F5EB6 /* Project object */;
+}
