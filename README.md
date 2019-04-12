@@ -4,7 +4,7 @@
 ##### 一个demo是一个项目，可单独运行。
 
 
-<img src="https://github.com/wanggang1128/WGCommonFuntions/raw/master/解决scrollView上tableView侧滑/demo01.gif" width="150" height="200" />
+<img src="https://github.com/wanggang1128/WGCommonFuntions/raw/master/解决scrollView上tableView侧滑/demo01.gif" width="150" height="300" />
 
-<img src="https://github.com/wanggang1128/WGCommonFuntions/raw/master/提高UISlider灵敏度/demo02.gif" width="100" height="250" />
+<img src="https://github.com/wanggang1128/WGCommonFuntions/raw/master/提高UISlider灵敏度/demo02.gif" width="150" height="300" />
 
