@@ -38,7 +38,7 @@
 - (WGUISlider *)slideView{
     
     if (!_slideView) {
-        _slideView = [[WGUISlider alloc] initWithFrame:CGRectMake(WGWIDTH/3/2, WGHEIGHT-50, WGWIDTH*2/3, 5)];
+        _slideView = [[WGUISlider alloc] initWithFrame:CGRectMake(WGWIDTH/3/2, WGHEIGHT/2, WGWIDTH*2/3, 5)];
         [_slideView addTarget:self action:@selector(slideViewChange:) forControlEvents:UIControlEventValueChanged];
         _slideView.minimumValue = 0;
         _slideView.maximumValue = 1;
@@ -51,7 +51,7 @@
 - (UILabel *)curValueLab{
     
     if (!_curValueLab) {
-        _curValueLab = [[UILabel alloc] initWithFrame:CGRectMake(WGWIDTH/3/2, WGHEIGHT-50-40, WGWIDTH*2/3, 20)];
+        _curValueLab = [[UILabel alloc] initWithFrame:CGRectMake(WGWIDTH/3/2, WGHEIGHT/2-40, WGWIDTH*2/3, 20)];
         _curValueLab.textAlignment = NSTextAlignmentCenter;
         _curValueLab.textColor = [UIColor blackColor];
         _curValueLab.text = [NSString stringWithFormat:@"当前进度:%.2f",_slideView.value];
