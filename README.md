@@ -7,3 +7,8 @@
 <img src="https://github.com/wanggang1128/WGCommonFuntions/raw/master/解决scrollView上tableView侧滑/demo01.gif" width="40%" height="auto">
  <img src="https://github.com/wanggang1128/WGCommonFuntions/raw/master/提高UISlider灵敏度/demo02.gif" width="40%" height="auto">
 
+# JFImagePicker
+高性能多选图片库
+
+<img src="https://raw.github.com/johnil/JFImagePickerController/master/assets/screenshot1.png" width="40%" height="auto">  <img src="https://raw.github.com/johnil/JFImagePickerController/master/assets/screenshot2.png" width="40%" height="auto">
+###功能
