@@ -1,5 +1,5 @@
 # WGCommonFuntions
-###### 存放一些常见的功能，遇到问题的解决方案，等等。例如：tableview侧滑冲突、slider灵敏度
+###### 存放一些常见的功能，遇到问题的解决方案，等等。例如：tableview侧滑冲突、slider灵敏度、runtime应用场景总结
 
 ##### 每一个demo都可单独运行。
 
