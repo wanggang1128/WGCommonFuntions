@@ -47,8 +47,8 @@
     _imgView.frame = CGRectMake(0, 0, self.width, self.width);
     _nameLab.frame = CGRectMake(_imgView.left, _imgView.bottom, _imgView.width, 20);
     _ageLab.frame = CGRectMake(_imgView.left, _nameLab.bottom, _imgView.width, 20);
-    _countLab.frame = CGRectMake(_imgView.left, _ageLab.bottom, _imgView.width/2, 20);
-    _likeBtn.frame = CGRectMake(_countLab.right, _ageLab.bottom, _imgView.width/2, 20);
+    _countLab.frame = CGRectMake(_imgView.left, _ageLab.bottom, _imgView.width/3*2, 20);
+    _likeBtn.frame = CGRectMake(_countLab.right, _ageLab.bottom, _imgView.width/3, 20);
 }
 
 - (void)listFrame{
@@ -106,7 +106,7 @@
     if (!_nameLab) {
         _nameLab = [[UILabel alloc] init];
         _nameLab.textColor = [UIColor blackColor];
-        _nameLab.font = [UIFont systemFontOfSize:14];
+        _nameLab.font = [UIFont systemFontOfSize:18];
     }
     return _nameLab;
 }
@@ -114,8 +114,8 @@
 -(UILabel *)ageLab{
     if (!_ageLab) {
         _ageLab = [[UILabel alloc] init];
-        _ageLab.textColor = [UIColor lightGrayColor];
-        _ageLab.font = [UIFont systemFontOfSize:12];
+        _ageLab.textColor = [UIColor blackColor];
+        _ageLab.font = [UIFont systemFontOfSize:15];
     }
     return _ageLab;
 }
@@ -123,8 +123,8 @@
 -(UILabel *)countLab{
     if (!_countLab) {
         _countLab = [[UILabel alloc] init];
-        _countLab.textColor = [UIColor lightGrayColor];
-        _countLab.font = [UIFont systemFontOfSize:12];
+        _countLab.textColor = [UIColor blackColor];
+        _countLab.font = [UIFont systemFontOfSize:15];
     }
     return _countLab;
 }
@@ -134,7 +134,7 @@
         _likeBtn = [[UIButton alloc] init];
         [_likeBtn setTitle:@"点赞" forState:UIControlStateNormal];
         _likeBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        [_likeBtn setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
+        [_likeBtn setTitleColor:UIColor.redColor forState:UIControlStateNormal];
         [_likeBtn addTarget:self action:@selector(likeBtnClicked) forControlEvents:UIControlEventTouchUpInside];
     }
     return _likeBtn;
