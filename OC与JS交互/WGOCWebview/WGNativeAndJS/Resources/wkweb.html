@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+            <script language="javascript">
+                function showMessageFromWKWebViewClick() {
+                    window.webkit.messageHandlers.wg.postMessage({title:'WKWebView', message:'测试WKWebView和OC交互'});
+                }
+            
+                function showMessageFromWKWebViewResult(returnStr) {
+                    document.getElementById("returnTextarea").value = returnStr;
+                    asyncAlert("JS已经收到返回结果");
+                }
+                function asyncAlert(alertStr) {
+                    setTimeout(function() {
+                           alert(alertStr);
+                           }, 1);
+                }
+            </script>
+            </head>
+    <body>
+        <h1>
+            JS页面
+        </h1>
+        <input type="button" value="点击事件去触发OC方法，当前是JS页面" onclick="showMessageFromWKWebViewClick()" />
+        <h1>
+        </h1>
+        <textarea id ="returnTextarea" type="value" rows="10" cols="80">
+        </textarea>
+        <div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		320FF483207B67AB006E9DC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FF482207B67AB006E9DC7 /* AppDelegate.m */; };
+		320FF486207B67AB006E9DC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FF485207B67AB006E9DC7 /* ViewController.m */; };
+		320FF48B207B67AB006E9DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320FF48A207B67AB006E9DC7 /* Assets.xcassets */; };
+		320FF48E207B67AB006E9DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320FF48C207B67AB006E9DC7 /* LaunchScreen.storyboard */; };
+		320FF491207B67AB006E9DC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FF490207B67AB006E9DC7 /* main.m */; };
+		320FF49B207B67AB006E9DC7 /* WGNativeAndJSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FF49A207B67AB006E9DC7 /* WGNativeAndJSTests.m */; };
+		320FF4A6207B67AB006E9DC7 /* WGNativeAndJSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FF4A5207B67AB006E9DC7 /* WGNativeAndJSUITests.m */; };
+		320FF4B7207B7409006E9DC7 /* uiweb.html in Resources */ = {isa = PBXBuildFile; fileRef = 320FF4B6207B7409006E9DC7 /* uiweb.html */; };
+		320FF4BA207B74D7006E9DC7 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FF4B9207B74D7006E9DC7 /* UIWebViewController.m */; };
+		320FF4BD207B76F7006E9DC7 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FF4BC207B76F7006E9DC7 /* WKWebViewController.m */; };
+		320FF4BF207B7713006E9DC7 /* wkweb.html in Resources */ = {isa = PBXBuildFile; fileRef = 320FF4BE207B7713006E9DC7 /* wkweb.html */; };
+		327527CF22A4F82700CAB901 /* WGWKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327527CE22A4F82700CAB901 /* WGWKFirstViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		320FF497207B67AB006E9DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320FF476207B67AA006E9DC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 320FF47D207B67AB006E9DC7;
+			remoteInfo = WGNativeAndJS;
+		};
+		320FF4A2207B67AB006E9DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320FF476207B67AA006E9DC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 320FF47D207B67AB006E9DC7;
+			remoteInfo = WGNativeAndJS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		320FF47E207B67AB006E9DC7 /* WGNativeAndJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGNativeAndJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		320FF481207B67AB006E9DC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		320FF482207B67AB006E9DC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		320FF484207B67AB006E9DC7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		320FF485207B67AB006E9DC7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		320FF48A207B67AB006E9DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		320FF48D207B67AB006E9DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		320FF48F207B67AB006E9DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320FF490207B67AB006E9DC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		320FF496207B67AB006E9DC7 /* WGNativeAndJSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGNativeAndJSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		320FF49A207B67AB006E9DC7 /* WGNativeAndJSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGNativeAndJSTests.m; sourceTree = "<group>"; };
+		320FF49C207B67AB006E9DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320FF4A1207B67AB006E9DC7 /* WGNativeAndJSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGNativeAndJSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		320FF4A5207B67AB006E9DC7 /* WGNativeAndJSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGNativeAndJSUITests.m; sourceTree = "<group>"; };
+		320FF4A7207B67AB006E9DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320FF4B6207B7409006E9DC7 /* uiweb.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = uiweb.html; sourceTree = "<group>"; };
+		320FF4B8207B74D7006E9DC7 /* UIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
+		320FF4B9207B74D7006E9DC7 /* UIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
+		320FF4BB207B76F7006E9DC7 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		320FF4BC207B76F7006E9DC7 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		320FF4BE207B7713006E9DC7 /* wkweb.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wkweb.html; sourceTree = "<group>"; };
+		327527CD22A4F82700CAB901 /* WGWKFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGWKFirstViewController.h; sourceTree = "<group>"; };
+		327527CE22A4F82700CAB901 /* WGWKFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGWKFirstViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		320FF47B207B67AB006E9DC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320FF493207B67AB006E9DC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320FF49E207B67AB006E9DC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		320FF475207B67AA006E9DC7 = {
+			isa = PBXGroup;
+			children = (
+				320FF480207B67AB006E9DC7 /* WGNativeAndJS */,
+				320FF499207B67AB006E9DC7 /* WGNativeAndJSTests */,
+				320FF4A4207B67AB006E9DC7 /* WGNativeAndJSUITests */,
+				320FF47F207B67AB006E9DC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		320FF47F207B67AB006E9DC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				320FF47E207B67AB006E9DC7 /* WGNativeAndJS.app */,
+				320FF496207B67AB006E9DC7 /* WGNativeAndJSTests.xctest */,
+				320FF4A1207B67AB006E9DC7 /* WGNativeAndJSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		320FF480207B67AB006E9DC7 /* WGNativeAndJS */ = {
+			isa = PBXGroup;
+			children = (
+				327527CB22A4F7AB00CAB901 /* Resources */,
+				327527CA22A4F79600CAB901 /* Main */,
+				327527C922A4F76700CAB901 /* UIWebViewFile */,
+				327527C822A4F74D00CAB901 /* WKWebViewFile */,
+				320FF48A207B67AB006E9DC7 /* Assets.xcassets */,
+				320FF48C207B67AB006E9DC7 /* LaunchScreen.storyboard */,
+				320FF48F207B67AB006E9DC7 /* Info.plist */,
+				320FF490207B67AB006E9DC7 /* main.m */,
+			);
+			path = WGNativeAndJS;
+			sourceTree = "<group>";
+		};
+		320FF499207B67AB006E9DC7 /* WGNativeAndJSTests */ = {
+			isa = PBXGroup;
+			children = (
+				320FF49A207B67AB006E9DC7 /* WGNativeAndJSTests.m */,
+				320FF49C207B67AB006E9DC7 /* Info.plist */,
+			);
+			path = WGNativeAndJSTests;
+			sourceTree = "<group>";
+		};
+		320FF4A4207B67AB006E9DC7 /* WGNativeAndJSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				320FF4A5207B67AB006E9DC7 /* WGNativeAndJSUITests.m */,
+				320FF4A7207B67AB006E9DC7 /* Info.plist */,
+			);
+			path = WGNativeAndJSUITests;
+			sourceTree = "<group>";
+		};
+		327527C822A4F74D00CAB901 /* WKWebViewFile */ = {
+			isa = PBXGroup;
+			children = (
+				320FF4BB207B76F7006E9DC7 /* WKWebViewController.h */,
+				320FF4BC207B76F7006E9DC7 /* WKWebViewController.m */,
+				327527CC22A4F7EB00CAB901 /* 使用教程 */,
+			);
+			path = WKWebViewFile;
+			sourceTree = "<group>";
+		};
+		327527C922A4F76700CAB901 /* UIWebViewFile */ = {
+			isa = PBXGroup;
+			children = (
+				320FF4B8207B74D7006E9DC7 /* UIWebViewController.h */,
+				320FF4B9207B74D7006E9DC7 /* UIWebViewController.m */,
+			);
+			path = UIWebViewFile;
+			sourceTree = "<group>";
+		};
+		327527CA22A4F79600CAB901 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				320FF481207B67AB006E9DC7 /* AppDelegate.h */,
+				320FF482207B67AB006E9DC7 /* AppDelegate.m */,
+				320FF484207B67AB006E9DC7 /* ViewController.h */,
+				320FF485207B67AB006E9DC7 /* ViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		327527CB22A4F7AB00CAB901 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				320FF4B6207B7409006E9DC7 /* uiweb.html */,
+				320FF4BE207B7713006E9DC7 /* wkweb.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		327527CC22A4F7EB00CAB901 /* 使用教程 */ = {
+			isa = PBXGroup;
+			children = (
+				327527CD22A4F82700CAB901 /* WGWKFirstViewController.h */,
+				327527CE22A4F82700CAB901 /* WGWKFirstViewController.m */,
+			);
+			path = "使用教程";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		320FF47D207B67AB006E9DC7 /* WGNativeAndJS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320FF4AA207B67AB006E9DC7 /* Build configuration list for PBXNativeTarget "WGNativeAndJS" */;
+			buildPhases = (
+				320FF47A207B67AB006E9DC7 /* Sources */,
+				320FF47B207B67AB006E9DC7 /* Frameworks */,
+				320FF47C207B67AB006E9DC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WGNativeAndJS;
+			productName = WGNativeAndJS;
+			productReference = 320FF47E207B67AB006E9DC7 /* WGNativeAndJS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		320FF495207B67AB006E9DC7 /* WGNativeAndJSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320FF4AD207B67AB006E9DC7 /* Build configuration list for PBXNativeTarget "WGNativeAndJSTests" */;
+			buildPhases = (
+				320FF492207B67AB006E9DC7 /* Sources */,
+				320FF493207B67AB006E9DC7 /* Frameworks */,
+				320FF494207B67AB006E9DC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				320FF498207B67AB006E9DC7 /* PBXTargetDependency */,
+			);
+			name = WGNativeAndJSTests;
+			productName = WGNativeAndJSTests;
+			productReference = 320FF496207B67AB006E9DC7 /* WGNativeAndJSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		320FF4A0207B67AB006E9DC7 /* WGNativeAndJSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320FF4B0207B67AB006E9DC7 /* Build configuration list for PBXNativeTarget "WGNativeAndJSUITests" */;
+			buildPhases = (
+				320FF49D207B67AB006E9DC7 /* Sources */,
+				320FF49E207B67AB006E9DC7 /* Frameworks */,
+				320FF49F207B67AB006E9DC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				320FF4A3207B67AB006E9DC7 /* PBXTargetDependency */,
+			);
+			name = WGNativeAndJSUITests;
+			productName = WGNativeAndJSUITests;
+			productReference = 320FF4A1207B67AB006E9DC7 /* WGNativeAndJSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		320FF476207B67AA006E9DC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = wanggang;
+				TargetAttributes = {
+					320FF47D207B67AB006E9DC7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					320FF495207B67AB006E9DC7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 320FF47D207B67AB006E9DC7;
+					};
+					320FF4A0207B67AB006E9DC7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 320FF47D207B67AB006E9DC7;
+					};
+				};
+			};
+			buildConfigurationList = 320FF479207B67AA006E9DC7 /* Build configuration list for PBXProject "WGNativeAndJS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 320FF475207B67AA006E9DC7;
+			productRefGroup = 320FF47F207B67AB006E9DC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				320FF47D207B67AB006E9DC7 /* WGNativeAndJS */,
+				320FF495207B67AB006E9DC7 /* WGNativeAndJSTests */,
+				320FF4A0207B67AB006E9DC7 /* WGNativeAndJSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		320FF47C207B67AB006E9DC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320FF48E207B67AB006E9DC7 /* LaunchScreen.storyboard in Resources */,
+				320FF4BF207B7713006E9DC7 /* wkweb.html in Resources */,
+				320FF4B7207B7409006E9DC7 /* uiweb.html in Resources */,
+				320FF48B207B67AB006E9DC7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320FF494207B67AB006E9DC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320FF49F207B67AB006E9DC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		320FF47A207B67AB006E9DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320FF4BD207B76F7006E9DC7 /* WKWebViewController.m in Sources */,
+				327527CF22A4F82700CAB901 /* WGWKFirstViewController.m in Sources */,
+				320FF486207B67AB006E9DC7 /* ViewController.m in Sources */,
+				320FF491207B67AB006E9DC7 /* main.m in Sources */,
+				320FF483207B67AB006E9DC7 /* AppDelegate.m in Sources */,
+				320FF4BA207B74D7006E9DC7 /* UIWebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320FF492207B67AB006E9DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320FF49B207B67AB006E9DC7 /* WGNativeAndJSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320FF49D207B67AB006E9DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320FF4A6207B67AB006E9DC7 /* WGNativeAndJSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		320FF498207B67AB006E9DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 320FF47D207B67AB006E9DC7 /* WGNativeAndJS */;
+			targetProxy = 320FF497207B67AB006E9DC7 /* PBXContainerItemProxy */;
+		};
+		320FF4A3207B67AB006E9DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 320FF47D207B67AB006E9DC7 /* WGNativeAndJS */;
+			targetProxy = 320FF4A2207B67AB006E9DC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		320FF48C207B67AB006E9DC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				320FF48D207B67AB006E9DC7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		320FF4A8207B67AB006E9DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		320FF4A9207B67AB006E9DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		320FF4AB207B67AB006E9DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGNativeAndJS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanggang.WGNativeAndJS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		320FF4AC207B67AB006E9DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGNativeAndJS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanggang.WGNativeAndJS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		320FF4AE207B67AB006E9DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGNativeAndJSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanggang.WGNativeAndJSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WGNativeAndJS.app/WGNativeAndJS";
+			};
+			name = Debug;
+		};
+		320FF4AF207B67AB006E9DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGNativeAndJSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanggang.WGNativeAndJSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WGNativeAndJS.app/WGNativeAndJS";
+			};
+			name = Release;
+		};
+		320FF4B1207B67AB006E9DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGNativeAndJSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanggang.WGNativeAndJSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WGNativeAndJS;
+			};
+			name = Debug;
+		};
+		320FF4B2207B67AB006E9DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGNativeAndJSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanggang.WGNativeAndJSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WGNativeAndJS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		320FF479207B67AA006E9DC7 /* Build configuration list for PBXProject "WGNativeAndJS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320FF4A8207B67AB006E9DC7 /* Debug */,
+				320FF4A9207B67AB006E9DC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		320FF4AA207B67AB006E9DC7 /* Build configuration list for PBXNativeTarget "WGNativeAndJS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320FF4AB207B67AB006E9DC7 /* Debug */,
+				320FF4AC207B67AB006E9DC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		320FF4AD207B67AB006E9DC7 /* Build configuration list for PBXNativeTarget "WGNativeAndJSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320FF4AE207B67AB006E9DC7 /* Debug */,
+				320FF4AF207B67AB006E9DC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		320FF4B0207B67AB006E9DC7 /* Build configuration list for PBXNativeTarget "WGNativeAndJSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320FF4B1207B67AB006E9DC7 /* Debug */,
+				320FF4B2207B67AB006E9DC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 320FF476207B67AA006E9DC7 /* Project object */;
+}

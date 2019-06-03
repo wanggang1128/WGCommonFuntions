@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div style="margin-top: 20px">
+<h2>JS与OC交互</h2>
+<input type="button" value="唤起本地方法(call)" onclick="wg.call()">
+</div>
+<div>
+<input type="button" value="唤起getCall:(NSString *)callString传值" onclick="call()">
+</div>
+
+<script>
+
+
+
+var call = function()
+{
+    var callInfo = JSON.stringify({"ceshi": "h5->ios->h5弹框"});
+        wg.getCall(callInfo);
+}
+
+function Callback(str){
+    alert(str);
+}
+
+function alerCallback(str1){
+    alert(str1);
+<!--    alert('成功');-->
+}
+
+//下面看着不顺眼
+<!--var Callback = function(str)-->
+<!--{-->
+<!--    alert(str);-->
+<!--}-->
+
+<!--var alerCallback = function(str)-->
+<!--{-->
+<!--    alert(str);-->
+<!--}-->
+</script>
+</body>
+</html>
