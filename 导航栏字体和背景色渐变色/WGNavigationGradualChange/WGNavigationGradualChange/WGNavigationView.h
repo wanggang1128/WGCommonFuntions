@@ -22,9 +22,10 @@
 
 @property (nonatomic, strong) UIButton *backBtn;
 @property (nonatomic, strong) UIButton *actionBtn;
-//是否返回自己作为最合适view(通俗讲就是点击自己时自己是否处理)
-@property (nonatomic, copy) NSString *alp;
+@property (nonatomic, strong) UILabel *titleLab;
 
 @property (nonatomic, weak) id<WGNavigationViewDelegate>wgNavigationViewDelegate;
+
+- (void)startAni:(CGFloat)offset;
 
 @end

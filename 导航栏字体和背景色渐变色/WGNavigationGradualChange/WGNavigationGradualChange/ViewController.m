@@ -39,24 +39,7 @@
 
 #pragma mark -UIScrollViewDelegate
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    CGFloat alpha = (scrollView.contentOffset.y+20)/300.0;
-    alpha = alpha>1?1:alpha;
-    self.navigationView.backgroundColor= [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:alpha];
-    //使用1.02是为了达到一个效果:使backBtn和actionBtn的透明度不小于0.01,这样能保证这两个按钮在显示的时候都能够点击(响应链:在控件的alpha<0.01时不会处理事件)
-    _navigationView.backBtn.alpha = 1.02-alpha;
-    _navigationView.actionBtn.alpha = 1.02-alpha;
-    if ((scrollView.contentOffset.y)>=300) {
-        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"SHOWNAVIGATIONVIEW" object:[NSString stringWithFormat:@"%@",alpha>0.05?@"NO":@"YES"]];
-        _navigationView.backBtn.alpha = 1;
-        _navigationView.actionBtn.alpha = 1;
-        
-    }else {
-        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
-
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"HIDENNAVIGATIONVIEW" object:[NSString stringWithFormat:@"%@",alpha>0.05?@"NO":@"YES"]];
-    }
+    [self.navigationView startAni:scrollView.contentOffset.y];
 }
 
 #pragma mark -UITableViewDelegate, UITableViewDataSource
@@ -95,10 +78,14 @@
 #pragma mark -WGNavigationViewDelegate
 -(void)backBtnMethod{
     NSLog(@"backBtnMethod");
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"backBtnMethod" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alert show];
 }
 
 -(void)actionBtnMethod{
     NSLog(@"actionBtnMethod");
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"actionBtnMethod" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alert show];
 }
 
 #pragma mark -懒加载
@@ -115,6 +102,8 @@
 -(WGNavigationView *)navigationView{
     if (!_navigationView) {
         _navigationView = [[WGNavigationView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, TOP_HEIGHT)];
+        _navigationView.backgroundColor = UIColor.purpleColor;
+        _navigationView.titleLab.text = @"标题";
         _navigationView.wgNavigationViewDelegate = self;
     }
     return _navigationView;

@@ -11,51 +11,54 @@
 
 #import "WGNavigationView.h"
 
+@interface WGNavigationView()
+
+//是否返回自己作为最合适view(通俗讲就是点击自己时自己是否处理)
+@property (nonatomic, assign) BOOL best;
+
+@end
+
 @implementation WGNavigationView
 
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
         [self buildView];
-        [self addNotification];
     }
     return self;
 }
 
 - (void)buildView{
+    self.backgroundColor = UIColor.blackColor;
     [self addSubview:self.backBtn];
     [self addSubview:self.actionBtn];
-    
-    CAGradientLayer * layer = [[CAGradientLayer alloc] init];
-    layer.frame = self.bounds;
-    layer.colors = @[(id)[UIColor colorWithWhite:0 alpha:0.2].CGColor,(id)[UIColor colorWithWhite:0 alpha:0.15].CGColor,(id)[UIColor colorWithWhite:0 alpha:0.1].CGColor,(id)[UIColor colorWithWhite:0 alpha:0.05].CGColor,(id)[UIColor colorWithWhite:0 alpha:0.03].CGColor,(id)[UIColor colorWithWhite:0 alpha:0.01].CGColor,(id)[UIColor colorWithWhite:0 alpha:0.0].CGColor];
-    [self.layer addSublayer:layer];
+    [self addSubview:self.titleLab];
 }
 
--(void)layoutSubviews{
-    [super layoutSubviews];
-    _backBtn.frame =CGRectMake(11, self.frame.size.height -35, 30, 30);
-    _backBtn.layer.masksToBounds = YES;
-    _backBtn.layer.cornerRadius = _backBtn.frame.size.width/2;
-    
-    _actionBtn.frame = CGRectMake(self.frame.size.width-41, self.frame.size.height - 35,30,30);
-    _actionBtn.layer.masksToBounds = YES;
-    _actionBtn.layer.cornerRadius = _backBtn.frame.size.width/2;
-}
 
-- (void)addNotification{
-    __weak __typeof(self) weakSelf = self;
-    [[NSNotificationCenter defaultCenter]addObserverForName:@"SHOWNAVIGATIONVIEW" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
-        [weakSelf.backBtn setBackgroundImage:[UIImage imageNamed:@"nursing_selected"] forState:0];
-        [weakSelf.actionBtn setBackgroundImage:[UIImage imageNamed:@"consultation_selected"] forState:0];
-        weakSelf.alp = note.object;
-    }];
+- (void)startAni:(CGFloat)offset{
     
-    [[NSNotificationCenter defaultCenter]addObserverForName:@"HIDENNAVIGATIONVIEW" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
-        [weakSelf.backBtn setBackgroundImage:[UIImage imageNamed:@"nursing_normal"] forState:0];
-        [weakSelf.actionBtn setBackgroundImage:[UIImage imageNamed:@"consultation_normal"] forState:0];
-        weakSelf.alp = note.object;
-    }];
+    CGFloat alpha = (offset+20)/300.0;
+    alpha = alpha>1?1:(alpha);
+    self.alpha = alpha;
+    self.backBtn.alpha = alpha;
+    self.actionBtn.alpha = alpha;
+    if ((offset)>=300) {
+        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+        
+        [self.backBtn setBackgroundImage:[UIImage imageNamed:@"nursing_selected"] forState:0];
+        [self.actionBtn setBackgroundImage:[UIImage imageNamed:@"consultation_selected"] forState:0];
+        self.titleLab.textColor = UIColor.whiteColor;
+        self.best = alpha>0.05;
+        
+    }else {
+        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+        
+        [self.backBtn setBackgroundImage:[UIImage imageNamed:@"nursing_normal"] forState:0];
+        [self.actionBtn setBackgroundImage:[UIImage imageNamed:@"consultation_normal"] forState:0];
+        self.titleLab.textColor = UIColor.blackColor;
+        self.best = alpha>0.05;
+    }
 }
 
 - (void)backBtnClicked{
@@ -74,6 +77,9 @@
     if (!_backBtn) {
         _backBtn = [[UIButton alloc] init];
         [_backBtn setBackgroundImage:[UIImage imageNamed:@"nursing_normal"] forState:UIControlStateNormal];
+        _backBtn.frame =CGRectMake(11, (self.frame.size.height -30+20)/2, 30, 30);
+        _backBtn.layer.masksToBounds = YES;
+        _backBtn.layer.cornerRadius = _backBtn.frame.size.width/2;
         [_backBtn addTarget:self action:@selector(backBtnClicked) forControlEvents:UIControlEventTouchUpInside];
     }
     return _backBtn;
@@ -82,16 +88,28 @@
 -(UIButton *)actionBtn{
     if (!_actionBtn) {
         _actionBtn = [[UIButton alloc] init];
+        _actionBtn.frame = CGRectMake(self.frame.size.width-41, (self.frame.size.height -30+20)/2,30,30);
+        _actionBtn.layer.masksToBounds = YES;
+        _actionBtn.layer.cornerRadius = _backBtn.frame.size.width/2;
         [_actionBtn setBackgroundImage:[UIImage imageNamed:@"consultation_normal"] forState:UIControlStateNormal];
         [_actionBtn addTarget:self action:@selector(actionBtnClicked) forControlEvents:UIControlEventTouchUpInside];
     }
     return _actionBtn;
 }
 
+-(UILabel *)titleLab{
+    if (!_titleLab) {
+        _titleLab = [[UILabel alloc] initWithFrame:CGRectMake(50, (self.frame.size.height -30+20)/2, (self.frame.size.width-100), 30)];
+        _titleLab.textAlignment = NSTextAlignmentCenter;
+        _titleLab.font = [UIFont systemFontOfSize:22];
+    }
+    return _titleLab;
+}
+
 //在点击self的时候不响应事件
 -(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
     UIView *view = [super hitTest:point withEvent:event];
-    if ([self.alp isEqualToString:@"NO"]) {
+    if (self.best) {
         return view;
     }else{
         if (view == self) {
@@ -109,11 +127,6 @@
      2.注释掉的话,事件就只会在这里处理
      */
 //    [super touchesBegan:touches withEvent:event];
-}
-
--(void)dealloc{
-    NSLog(@"所有通知被移除");
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
