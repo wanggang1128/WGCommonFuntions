@@ -64,7 +64,7 @@
     // 成功回调JavaScript的方法Callback
     JSValue *Callback = self.jsContext[@"alerCallback"];
     [Callback callWithArguments:@[callString]];
-    
+
     //或者
     //    [self alert];
 }
@@ -73,7 +73,7 @@
     // 直接添加提示框
     NSString *str = @"alert('OC添加JS提示成功')";
     [self.jsContext evaluateScript:str];
-    
+
 }
 
 @end

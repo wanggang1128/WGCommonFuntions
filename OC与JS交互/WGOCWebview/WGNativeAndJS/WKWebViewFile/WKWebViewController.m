@@ -9,7 +9,7 @@
 #import "WKWebViewController.h"
 #import <WebKit/WebKit.h>
 
-@interface WKWebViewController ()<WKUIDelegate, WKScriptMessageHandler>
+@interface WKWebViewController ()<WKUIDelegate, WKScriptMessageHandler, WKNavigationDelegate>
 @property (strong, nonatomic) WKWebView *wkWebView;
 @end
 
@@ -31,6 +31,7 @@
     NSURL *fileURL = [NSURL fileURLWithPath:webViewURLStr];
     [self.wkWebView loadFileURL:fileURL allowingReadAccessToURL:fileURL];
     self.wkWebView.UIDelegate = self;
+    self.wkWebView.navigationDelegate = self;
     [self.view addSubview:self.wkWebView];
 }
 
@@ -70,4 +71,5 @@
         NSLog(@"%@,%@", result, error);
     }];
 }
+
 @end

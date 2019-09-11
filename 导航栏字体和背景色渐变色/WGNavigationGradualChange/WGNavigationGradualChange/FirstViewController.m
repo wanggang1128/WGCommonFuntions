@@ -18,6 +18,28 @@
     [super viewDidLoad];
     self.title = @"FirstViewController";
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self setNavBarAppearance:YES];
+}
+
+- (void)setNavBarAppearance:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    UINavigationBar *navBar = self.navigationController.navigationBar;
+    navBar.tintColor = [UIColor redColor];
+//    navBar.barTintColor = UIColor.yellowColor;
+    
+    //设置导航栏背景图片为一个空的image，这样就透明了
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    //去掉透明后导航栏下边的黑边
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+    self.navigationController.navigationBar.translucent = YES;
+    
+    NSDictionary *dic = @{
+                          NSForegroundColorAttributeName : [UIColor purpleColor],
+                          NSFontAttributeName : [UIFont fontWithName:@"Helvetica-Bold" size:25]
+                          };
+    [self.navigationController.navigationBar setTitleTextAttributes:dic];
+    
 }
 
 - (void)didReceiveMemoryWarning {
