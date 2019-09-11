@@ -1,0 +1,6 @@
+framework module WGStaticLibrary {
+  umbrella header "WGStaticLibrary.h"
+
+  export *
+  module * { export * }
+}
