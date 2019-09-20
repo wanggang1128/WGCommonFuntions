@@ -17,12 +17,15 @@
 #import "PersonModel.h"
 #import "CPerson.h"
 #import "CPerson+Associate.h"
+#import "KVO/Car.h"
+#import "KVO/NSObject+WG_KVO.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSArray *dataArr;
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong) NSString *temPath;
+@property (nonatomic, strong) Car *car;
 
 @end
 
@@ -36,7 +39,24 @@
 
 - (void)setBaseView{
     self.title = @"Runtime测试";
+    
+    self.car = [[Car alloc] init];
+//    [_car addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+    [_car wg_addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
 }
+
+#pragma mark -kvo
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    
+    [self alertView:[NSString stringWithFormat:@"%@",change]];
+}
+
+
+-(void)wg_observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    
+    [self alertView:[NSString stringWithFormat:@"%@",change]];
+}
+
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -137,6 +157,10 @@
                         [self alertView:[NSString stringWithFormat:@"runtime模型转字典%@", newDic]];
             break;
         }
+        case 8:{
+            self.car.age = 10;
+            break;
+        }
         default:
             break;
     }
@@ -145,7 +169,7 @@
 
 - (NSArray *)dataArr{
     if (!_dataArr) {
-        _dataArr = [NSArray arrayWithObjects:@"objc_msgSend", @"归档", @"解档", @"方法交换", @"消息转发", @"动态添加类，为类添加对象方法，成员变量", @"分类中不能直接添加属性的原因和探索", @"runtime实现字典和模型之间的相互转换", nil];
+        _dataArr = [NSArray arrayWithObjects:@"objc_msgSend", @"归档", @"解档", @"方法交换", @"消息转发", @"动态添加类，为类添加对象方法，成员变量", @"分类中不能直接添加属性的原因和探索", @"runtime实现字典和模型之间的相互转换",@"runtime实现KVO", nil];
     }
     return _dataArr;
 }

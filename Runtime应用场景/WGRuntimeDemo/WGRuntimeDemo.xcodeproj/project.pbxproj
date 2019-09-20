@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		325889FC233469EB009EC972 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 325889FB233469EB009EC972 /* Car.m */; };
+		32588A0223346FE2009EC972 /* NSObject+WG_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 32588A0123346FE2009EC972 /* NSObject+WG_KVO.m */; };
 		326ABBBF20858C1E00BD69EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 326ABBBE20858C1E00BD69EC /* AppDelegate.m */; };
 		326ABBC220858C1E00BD69EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326ABBC120858C1E00BD69EC /* ViewController.m */; };
 		326ABBC720858C1F00BD69EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326ABBC620858C1F00BD69EC /* Assets.xcassets */; };
@@ -42,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		325889FA233469EB009EC972 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		325889FB233469EB009EC972 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		32588A0023346FE2009EC972 /* NSObject+WG_KVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+WG_KVO.h"; sourceTree = "<group>"; };
+		32588A0123346FE2009EC972 /* NSObject+WG_KVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WG_KVO.m"; sourceTree = "<group>"; };
 		326ABBBA20858C1E00BD69EC /* WGRuntimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGRuntimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		326ABBBD20858C1E00BD69EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		326ABBBE20858C1E00BD69EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +106,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		325889F9233469A7009EC972 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				325889FA233469EB009EC972 /* Car.h */,
+				325889FB233469EB009EC972 /* Car.m */,
+				32588A0023346FE2009EC972 /* NSObject+WG_KVO.h */,
+				32588A0123346FE2009EC972 /* NSObject+WG_KVO.m */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
 		326ABBB120858C1E00BD69EC = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +140,7 @@
 		326ABBBC20858C1E00BD69EC /* WGRuntimeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				325889F9233469A7009EC972 /* KVO */,
 				326ABBBD20858C1E00BD69EC /* AppDelegate.h */,
 				326ABBBE20858C1E00BD69EC /* AppDelegate.m */,
 				326ABBC020858C1E00BD69EC /* ViewController.h */,
@@ -307,8 +325,10 @@
 				326ABBFD2085CC9500BD69EC /* MsgZFPerson.m in Sources */,
 				326ABBF42085998900BD69EC /* Person.m in Sources */,
 				326ABC032085DF0C00BD69EC /* WGAddClass.m in Sources */,
+				325889FC233469EB009EC972 /* Car.m in Sources */,
 				326ABBCD20858C1F00BD69EC /* main.m in Sources */,
 				326ABC062085EDD800BD69EC /* PersonModel.m in Sources */,
+				32588A0223346FE2009EC972 /* NSObject+WG_KVO.m in Sources */,
 				326ABBFA2085C6D100BD69EC /* NSURL+WGUrl.m in Sources */,
 				326ABC09208607D700BD69EC /* CPerson.m in Sources */,
 				326ABBBF20858C1E00BD69EC /* AppDelegate.m in Sources */,
