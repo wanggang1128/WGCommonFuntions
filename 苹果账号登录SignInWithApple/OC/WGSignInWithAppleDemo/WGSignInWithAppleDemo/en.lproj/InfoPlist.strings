@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  WGSignInWithAppleDemo
+
+  Created by wanggang on 2019/9/26.
+  Copyright © 2019 wg. All rights reserved.
+*/
+
+// Localizable App Name是App在英语环境环境下显示的名称
+CFBundleDisplayName = "SignInWithApple";

@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  WGSignInWithAppleDemo
+
+  Created by wanggang on 2019/9/26.
+  Copyright © 2019 wg. All rights reserved.
+*/
+
+CFBundleDisplayName = "苹果登录demo";
